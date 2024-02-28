@@ -2,6 +2,8 @@
 
 ***Assignment 1***
 
+
+
 **Part1:** 
 
 Implement a menu-driven Java program (like fib or factorial) to implement these input methods in java (command line args, Scanner, BufferedReader, DataInputStream, Console )
@@ -21,6 +23,7 @@ main method: This is the main method of the program. It contains a do-while loop
 Factorial class: This class contains the calculateFactorial method that calculates the factorial of a given number. It takes an integer as input and returns the factorial as a long integer.
 
 calculateFactorial method: This method calculates the factorial of a given number. It takes an integer as input and returns the factorial as a long integer. It uses a for loop to iterate from 1 to the number and multiplies the current factorial value with each integer in the range. The final factorial value is returned as the result.
+
 
 
 **Part2:**
@@ -60,6 +63,8 @@ closeScanner(): This method closes the Scanner object when it's no longer needed
 
 
 
+
+
 ***Assignment 2***
 
 
@@ -75,6 +80,7 @@ Part1: This is a class that has a method to separate the even and odd numbers fr
 part1(int data[]): This method takes an array of integers as input and separates the even and odd numbers. It initializes two arrays, one for even numbers and one for odd numbers, and two counters for the number of even and odd numbers. It then iterates through the input array and checks if each number is even or odd. If the number is even, it increments the even counter and stores the number in the even array. If the number is odd, it increments the odd counter and stores the number in the odd array. Finally, it prints the original array, the even array, and the odd array.
 
 Main: This is the main class that initializes the Input and Part1 classes and calls their methods. The main() method creates an instance of the Input class and calls its getInput() method to initialize the input array. Then, it creates an instance of the Part1 class and calls its part1() method with the input array as the argument. By doing this, it separates the even and odd numbers and prints the arrays.
+
 
 
 
@@ -99,6 +105,8 @@ It calls the getArrayInput() method of the Input class to get an array of intege
 It then calls the findSmallestDistanceNeighbors() method of the Part2 class with the obtained array as an argument.
 If the returned index is -1, it means that no two neighboring numbers with the smallest distance to each other were found. In this case, it prints a message to that effect.
 Otherwise, it prints the index of the first number in the pair of neighboring numbers with the smallest distance to each other.
+
+
 
 Part2 class:
 
@@ -130,6 +138,8 @@ getArrayListInput(Scanner scanner): This method takes a Scanner object as input.
 Main class:
 
 main(String[] args): This is the main method of the program. It creates a Scanner object to read user input. It then displays a menu to the user and prompts them to choose an option. Based on the user's choice, it calls the appropriate method from the Converter or Input class. The program continues to run until the user chooses the "Exit" option.
+
+
 
 
 
@@ -173,7 +183,10 @@ Class StudentDemo :
 
 
 
+
+
 ***Assignment 5***
+
 
 **Part 1:** 
 Implement the generic Shapes class as an interface s so that we can implement concrete classes like circle, triangle, rectangle class from it. Implemented three different shapes: Circle, Triangle, and Rectangle. Each shape implements the Shape interface, which contains two methods: area() and perimeter(). These methods are used to calculate the area and perimeter of each shape.
@@ -203,6 +216,7 @@ The main() method prompts the user to select a shape (Circle, Triangle, or Recta
 The main() method then creates an instance of the selected shape and calls the area() and perimeter() methods to calculate and display the area and perimeter of the shape.
 
 The main() method uses a switch statement to determine which shape the user has selected. It then prompts the user to enter the necessary parameters for that shape and creates an instance of the selected shape. Finally, it calls the area() and perimeter() methods to calculate and display the area and perimeter of the shape.
+
 
 
 **Part 2:**
