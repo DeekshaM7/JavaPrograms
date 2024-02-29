@@ -233,3 +233,45 @@ BonusEmployee: This class also extends the Employee class and contains the metho
 Main:
    This class contains the main method and takes inputs for gross wage, total working days, loss of pay days, and bonus (if any) from the user. It creates an object of NormalEmployee or BonusEmployee based on the bonus input and calls the theMonthly() method to calculate the net salary. It then prints the payslip with all the details using the printPaySlip() method.
 printPaySlip(): This method prints the payslip for the employee with all the details such as employee name, ID, designation, department, date of joining, bank name, account number, gross wage, total working days, loss of pay days, allowances, deductions, and net salary. It also checks and prints whether the employee is a normal or bonus employee.
+
+
+***Assignment 6***
+
+**Part 1:** Implementation of Fixed and Growable Stack using Interface\_STK
+
+In this code, we have two different implementations of a stack data structure: Fixed\_STK and Growable\_STK. Both implementations follow the Interface\_STK interface, which defines the methods that a stack should have: push, pop, displayStack, isOverflow, and isUnderflow.
+
+The Fixed\_STK implementation uses a fixed-size array to store the elements of the stack. It has the following methods:
+
+1. **push:** This method takes an integer as an argument and adds it to the top of the stack. If the stack is full (i.e., the top index is equal to the last index of the array), it throws an error message and terminates the program.
+2. **pop:** This method removes the element at the top of the stack and returns it. If the stack is empty (i.e., the top index is -1), it throws an error message and terminates the program.
+3. **displayStack:** This method prints the elements of the stack. If the stack is empty, it prints a message and terminates the program.
+4. **isOverflow:** This method checks if the stack is full. It returns true if the top index is equal to the last index of the array, and false otherwise.
+5. **isUnderflow:** This method checks if the stack is empty. It returns true if the top index is -1, and false otherwise.
+
+The Growable\_STK implementation uses an ArrayList to store the elements of the stack. It has the same methods as the Fixed\_STK implementation, with the following differences:
+
+1. **push:** This method takes an integer as an argument and adds it to the top of the stack. If the stack is full (i.e., the ArrayList is at its maximum capacity), it automatically increases its capacity.
+2. **pop:** This method removes the element at the top of the stack and returns it. If the stack is empty, it throws an error message and terminates the program.
+3. **displayStack:** This method prints the elements of the stack. If the stack is empty, it prints a message and terminates the program.
+4. **isOverflow:** This method always returns false, because an ArrayList can grow indefinitely.
+5. **isUnderflow:** This method checks if the stack is empty. It returns true if the ArrayList is empty, and false otherwise.
+
+In the main method of the StackDemo class, we create instances of both implementations and use them to demonstrate their functionality. We push some elements onto the stacks, display the elements, pop an element, and then display the remaining elements.
+
+The InterfaceDemo class demonstrates the use of an interface. It defines an interface called Interface1 with two methods: method1 and method2. The InterfaceImplementation class implements this interface by providing implementations for both methods. In the main method of the InterfaceDemo class, we create an instance of the InterfaceImplementation class and call both methods.
+
+
+***Assignment 6***
+
+**Part 2:** Multiple Interface.
+
+This code consists of two classes: Main and Result. The Main class contains the main method, which is the entry point of the program. It takes user input for the student's name, roll number, mark 1, and mark 2. It then creates an object of the Result class, passing the user input as arguments. The Result class extends the Student class and implements the InterfaceExam interface. It has two methods: displayExamDetails and Percent\_cal.
+
+- **displayExamDetails**  **method:** is used to display the student's details, including their name, roll number, mark 1, mark 2, and percentage. It is called after the object of the Result class is created.
+- **Percent\_cal**  **method** : calculates the percentage of the student's marks. It takes two arguments: mark1 and mark2. The percentage is calculated by adding the two marks and dividing the sum by 2.
+- **Student**  **class:** is a simple class with five fields: name, rollNo, mark1, mark2. It has a constructor that takes four arguments and initializes the fields accordingly.
+- **InterfaceExam:** interface contains two methods: displayExamDetails and Percent\_cal. The Result class implements this interface, meaning it must provide implementations for both methods.
+- The Scanner object is created in the main method and is used to read the student's name, roll number, mark 1, and mark 2.
+- **displayExamDetails**  **method:** is called after the Result object is created. It displays the student's name, roll number, mark 1, mark 2, and percentage.
+- **Percent\_cal**  **method:** is called within the displayExamDetails method to calculate the percentage of the student's marks. The percentage is then displayed.
