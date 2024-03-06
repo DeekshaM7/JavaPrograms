@@ -184,6 +184,61 @@ Class StudentDemo :
 
 
 
+***Assignment 6***
+
+
+**Write a menu-driven Java Program for the following:
+1. There are 52 cards in a deck, each of which belongs to one of four suits and one of 13
+ranks. Represent a deck of cards as an array of Objects (*you may use the Vector class)
+2. Use integers to encode the ranks and suits.
+3. Have suitable default & parameterized constructors.
+4. All data members to have private access. The class' Card' to have the following
+methods: createDeck(), printCard(), printDeck (),sameCard(),compareCard(), sortCard(), findCard() which searches through an array or vector of Cards to see whether it contains a specific card, dealCards() function: to print 5 random cards from the existing deck.**
+
+
+Methods:
+
+assignment_4 Class
+
+main(String[] args): The main method of the program. It initializes a new deck and calls the createDeck() method of the Deck class to create and manage the deck.
+
+
+Card Class
+
+Card(int rank, String suit): Constructor for creating a new card with the specified rank and suit.
+
+getRank(): Returns the rank of the card.
+
+getSuit(): Returns the suit of the card.
+
+toString(): Returns a string representation of the card.
+
+
+Deck Class
+
+Deck(): Constructor for creating a new deck of cards.
+
+createDeck(): Populates the deck with cards and provides a menu-driven interface to interact with the deck.
+
+displayDeck(Vector<Card> deck): Displays the current state of the deck.
+
+shuffleDeck(Vector<Card> deck): Shuffles the cards in the deck.
+
+drawCard(): Draws a card from the deck.
+
+emptyDeck(): Empties the deck.
+
+compareCard(): Compares two randomly drawn cards.
+
+sameCard(): Checks if two randomly drawn cards are the same.
+
+sortCard(): Sorts the deck of cards in ascending order of ranks and suits.
+
+findCard(): Finds a card in the deck based on the given rank and suit.
+
+dealCard(Vector<Card> deck): Deals a hand of cards to the specified number of players.
+
+
 
 ***Assignment 5***
 
