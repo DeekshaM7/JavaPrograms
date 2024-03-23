@@ -330,3 +330,115 @@ This code consists of two classes: Main and Result. The Main class contains the 
 - The Scanner object is created in the main method and is used to read the student's name, roll number, mark 1, and mark 2.
 - **displayExamDetails**  **method:** is called after the Result object is created. It displays the student's name, roll number, mark 1, mark 2, and percentage.
 - **Percent\_cal**  **method:** is called within the displayExamDetails method to calculate the percentage of the student's marks. The percentage is then displayed.
+
+
+
+
+***Assignmnet 7***
+
+**Part 1:** 
+
+**Title:** Rational Number Operations
+The Rational Number Operations program implements a RationalNumber class in Java to represent rational numbers. A rational number is a number that can be expressed as the ratio of two integers, a numerator, and a denominator. This program provides methods for performing various arithmetic operations on rational numbers, such as addition, subtraction, multiplication, and division. Additionally, it includes methods for comparing two rational numbers, converting a rational number to a floating-point number, and finding the absolute value of a rational number.
+
+**RationalNumber** **Class**
+The RationalNumber class encapsulates a rational number and provides methods to perform arithmetic operations. Here's an overview of the class:
+
+**Constructor**
+-Constructs a RationalNumber object with the given numerator and denominator.
+-Throws an IllegalArgumentException if the denominator is zero.
+
+**Public** **Methods**
+**add(RationalNumber other)**
+Performs addition of the current rational number with another rational number (other).
+**subtract(RationalNumber other)**
+Performs subtraction of the current rational number by another rational number (other).
+**multiply(RationalNumber other)**
+Performs multiplication of the current rational number with another rational number (other).
+**divide(RationalNumber other)**
+Performs division of the current rational number by another rational number (other).
+Throws an ArithmeticException if the other numerator is zero.
+**toDouble()**
+Converts the rational number to a floating-point number.
+**abs()**
+Returns the absolute value of the rational number.
+
+**Private** **Methods**
+**gcd(int a, int b)**
+Calculates the greatest common divisor (GCD) of two integers a and b.
+**simplify()**
+Simplifies the rational number by dividing both numerator and denominator by their greatest common divisor.
+
+**Overridden** **Methods**
+**toString()**
+Returns a string representation of the rational number in the form "numerator/denominator".
+
+**Test** **Class**
+The Test class provides a simple console-based interface to interact with the RationalNumber class. It allows users to input two rational numbers and perform various operations on them.
+
+
+
+**Part 2:**
+
+**Title:** Write a Java Program to find the factorial of ‘n’ integers (as command line arguments CLA). Write your own exception “FactorialException” to validate integer values to be in certain range. Sample call: java ExceptionDemo 8 –
+6 14 abcd 5
+1) Static main method invokes another method “factorial()”
+2) CLA which are strings but interpreted as integer values.
+3) The user-defined exception class
+FactorialException should have proper constructors / overridden toString() method to display exception message along with the
+wrong input number that had generated the exception.
+NumberFormatException (ill-formed CLA)
+And
+Your Exception class. FactorialException ( n<0 and n>15)
+
+**class FactorialException extends Exception:**
+
+This class defines a custom exception named FactorialException, which extends the built-in Exception class.
+It contains a private attribute number to store the number causing the exception.
+The constructor FactorialException(int number) initializes the exception with the out-of-range number.
+The toString() method overrides the toString() method of the Exception class to provide a custom string representation of the exception, indicating that the number is out of range.
+
+**public class ExceptionDemo:**
+
+This class contains the main method and the factorial method.
+
+**public static void main(String\[\] args):**
+The main method takes an array of strings as input arguments.
+It iterates through each argument and tries to parse it into an integer.
+If parsing succeeds, it checks whether the number is within the range [0, 15]. If not, it throws a FactorialException.
+It then calculates the factorial of the number using the factorial method and prints the result.
+It catches NumberFormatException if the argument cannot be parsed into an integer and prints an appropriate error message.
+It catches FactorialException if the number is out of range and prints the custom exception message.
+
+**public static int factorial(int n):**
+This method calculates the factorial of a given integer n.
+It is a recursive method that calls itself with n - 1 until n becomes 0.
+The base case is when n is 0, in which case it returns 1.
+Otherwise, it recursively calculates n * factorial(n - 1) and returns the result.
+
+
+**Part 3:**
+
+**Title:** Define an exception class called “NOMATCHEXCP” that is thrown when the string from the keyboard is not equal to “India”. Write a Demo program using try-catch block that shows the use of this user-defined exception. Class NOMATCHEXCP should have a parameterized constructor and the exception message generated should show the line number and the erroneous String that was inputted by the user.
+
+**public class Demo:**
+
+This class contains the main method, which serves as the entry point of the program.
+It reads input from the user using BufferedReader.
+It checks if the input string equals "India" and throws a NoMatchException if it doesn't.
+It catches NoMatchException and IOException and prints appropriate error messages.
+
+**public static void main(String\[\] args):**
+
+The main method initializes a BufferedReader to read input from the console.
+It prompts the user to enter a string.
+It reads the input string using reader.readLine().
+If the input string is not equal to "India", it throws a NoMatchException.
+It catches NoMatchException and IOException and prints error messages accordingly.
+
+**class NoMatchException extends Exception:**
+
+This class defines a custom exception named NoMatchException, which extends the built-in Exception class.
+It contains private attributes lineNumber and erroneousString to store the line number and the erroneous string.
+The constructor NoMatchException(int lineNumber, String erroneousString) initializes the exception with the line number and the erroneous string.
+The getMessage() method overrides the getMessage() method of the Exception class to provide a custom error message, indicating the line number and the expected string versus the erroneous string.
