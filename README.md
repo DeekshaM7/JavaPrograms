@@ -339,37 +339,49 @@ This code consists of two classes: Main and Result. The Main class contains the 
 **Part 1:** 
 
 **Title:** Rational Number Operations
+
 The Rational Number Operations program implements a RationalNumber class in Java to represent rational numbers. A rational number is a number that can be expressed as the ratio of two integers, a numerator, and a denominator. This program provides methods for performing various arithmetic operations on rational numbers, such as addition, subtraction, multiplication, and division. Additionally, it includes methods for comparing two rational numbers, converting a rational number to a floating-point number, and finding the absolute value of a rational number.
 
 **RationalNumber** **Class**
+
 The RationalNumber class encapsulates a rational number and provides methods to perform arithmetic operations. Here's an overview of the class:
 
 **Constructor**
+
 -Constructs a RationalNumber object with the given numerator and denominator.
 -Throws an IllegalArgumentException if the denominator is zero.
 
 **Public** **Methods**
+
 **add(RationalNumber other)**
 Performs addition of the current rational number with another rational number (other).
+
 **subtract(RationalNumber other)**
 Performs subtraction of the current rational number by another rational number (other).
+
 **multiply(RationalNumber other)**
 Performs multiplication of the current rational number with another rational number (other).
+
 **divide(RationalNumber other)**
 Performs division of the current rational number by another rational number (other).
 Throws an ArithmeticException if the other numerator is zero.
+
 **toDouble()**
 Converts the rational number to a floating-point number.
+
 **abs()**
 Returns the absolute value of the rational number.
 
 **Private** **Methods**
+
 **gcd(int a, int b)**
 Calculates the greatest common divisor (GCD) of two integers a and b.
+
 **simplify()**
 Simplifies the rational number by dividing both numerator and denominator by their greatest common divisor.
 
 **Overridden** **Methods**
+
 **toString()**
 Returns a string representation of the rational number in the form "numerator/denominator".
 
